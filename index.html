@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Market Rate Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="headerContainer">
+
+    <img src="farmer.jpg" class="headerImage">
+
+    <h1>Smart Market Rate Checker</h1>
+
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Market Rates</a>
+    <a href="#">About</a>
+</nav>
+
+</header>
+<section>
+    <h2>Check Real Market Prices</h2>
+
+    <input type="text" id="product" placeholder="Search product...">
+<button onclick="checkPrice()">Search</button>
+
+
+<div id="result" class="resultBox"></div>
+
+</section>
+
+
+<h3>Categories</h3>
+
+<div class="cards">
+
+    <div class="card" onclick="showCategory('agriculture')">
+        🌾 Agriculture
+    </div>
+
+    <div class="card" onclick="showCategory('metal')">
+        💰 Gold/Silver
+    </div>
+
+    <div class="card" onclick="showCategory('daily')">
+        🛒 Daily Items
+    </div>
+
+</div>
+<h3>Today's Market Rates</h3>
+
+<table border="1" class="marketTable">
+
+<tr>
+    <th>Product</th>
+    <th>Price</th>
+</tr>
+
+<tr>
+    <td>Onion</td>
+    <td>₹30/kg</td>
+</tr>
+
+<tr>
+    <td>Wheat</td>
+    <td>₹25/kg</td>
+</tr>
+
+<tr>
+    <td>Gold</td>
+    <td>₹6000/g</td>
+</tr>
+
+</table>
+
+
+<p id="categoryResult"></p>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
